@@ -1,0 +1,128 @@
+.edit-book-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-book-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.edit-book-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-book-container form input[type="text"],
+.edit-book-container form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.edit-book-container form textarea {
+  height: 100px;
+}
+
+.edit-book-container form button.update-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-book-container form button.update-button:hover {
+  background-color: #0056b3;
+}
+
+.loading,
+.no-book-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.edit-book-container form textarea {
+  height: 100px;
+  resize: none; /* ユーザーがリサイズできないようにする */
+  font-family: Arial, sans-serif; /* フォントファミリーを指定 */
+  line-height: 1.5; /* 行の高さを設定 */
+  padding: 10px; /* 内側の余白を設定 */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.edit-book-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.edit-book-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-book-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-book-container label {
+  margin-bottom: 8px;
+}
+
+.edit-book-container input[type="text"],
+.edit-book-container textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.edit-book-container textarea {
+  height: 120px;
+}
+
+.select-button {
+  display: flex;
+  gap: 10px;
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}

@@ -1,0 +1,87 @@
+/* profile.css */
+
+/* 全体のレイアウト */
+.profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 見出し */
+.profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 現在のユーザー名表示部分 */
+.profile div {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* フォーム全体 */
+.profile form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ラベル */
+.profile label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 入力フィールド */
+.profile input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 更新ボタン */
+.profile button[type='submit'] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  .profile {
+    padding: 15px;
+  }
+
+  .profile h2 {
+    font-size: 20px;
+  }
+
+  .profile div {
+    font-size: 14px;
+  }
+
+  .profile input[type='text'] {
+    font-size: 14px;
+  }
+
+  .profile button[type='submit'] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

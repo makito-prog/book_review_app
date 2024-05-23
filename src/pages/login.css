@@ -1,0 +1,98 @@
+/* login.css */
+
+/* サインインコンテナのスタイル */
+.signin {
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* タイトルのスタイル */
+.signin h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 入力フィールドのコンテナスタイル */
+.input {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ラベルのスタイル */
+label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 入力フィールドのスタイル */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 新しいアカウントリンクのスタイル */
+.new-acount {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 新しいアカウントリンクのスタイル */
+.new-acount a {
+  color: #27acd9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.new-acount a:hover {
+  text-decoration: underline;
+}
+
+/* ログインボタンのスタイル */
+.login-button {
+  font-weight: bold;
+  width: 120px;
+  padding: 10px;
+  border: 1px solid #27acd9;
+  color: #27acd9;
+  background: none;
+  margin: 20px 0;
+  border-radius: 4px;
+  transition: background 0.5s, color 0.5s;
+}
+
+.login-button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #27acd9;
+}
+
+/* エラーメッセージのスタイル */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* フォームのエラーメッセージのスタイル */
+input:invalid {
+  border-color: red;
+}
+
+input:invalid ~ .error-message {
+  display: block;
+}

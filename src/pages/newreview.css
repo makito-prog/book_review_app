@@ -1,0 +1,59 @@
+/* 新しいレビューを登録するフォームのスタイル */
+.new-review__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-review__container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.new-review__container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-review__container .form-group {
+  margin-bottom: 20px;
+}
+
+.new-review__container label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.new-review__container input[type="text"],
+.new-review__container input[type="url"],
+.new-review__container textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-review__container textarea {
+  height: 150px;
+}
+
+.new-review__container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #076c97;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-review__container button:hover {
+  background-color: #06567a;
+}

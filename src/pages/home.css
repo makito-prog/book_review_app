@@ -1,0 +1,108 @@
+/* home.css */
+
+/* メインコンテナのスタイル */
+.home__main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* タイトルのスタイル */
+.home__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.home__new {
+  display: inline-block;
+  background-color: #076c97;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.home__new:hover {
+  background-color: #06567a;
+}
+
+/* 書籍リストのスタイル */
+.home__book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 書籍レビューのスタイル */
+.home__book-review {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home__book-review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 書籍タイトルのスタイル */
+.home__book-review--title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #076c97;
+}
+
+/* 書籍URLのスタイル */
+.home__book-review--url {
+  word-break: break-all;
+  display: block;
+  color: #1a0dab;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.home__book-review--url:hover {
+  text-decoration: underline;
+}
+
+/* レビュワーのスタイル */
+.home__book-review--reviewer {
+  margin: 0;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* レビュー内容のスタイル */
+.home__book-review--item {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+  .home__main {
+    padding: 15px;
+  }
+
+  .home__title {
+    font-size: 24px;
+  }
+
+  .home__book-review {
+    padding: 15px;
+  }
+
+  .home__book-review--title {
+    font-size: 20px;
+  }
+}
