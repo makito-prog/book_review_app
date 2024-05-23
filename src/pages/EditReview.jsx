@@ -77,7 +77,7 @@ export const EditReview = () => {
         throw new Error('Failed to delete book');
       }
       // 削除成功時の処理
-      navigate('/'); // ホームページにリダイレクト
+      navigate('/home'); // ホームページにリダイレクト
     } catch (error) {
       console.error('Error deleting book:', error);
     }

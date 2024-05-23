@@ -60,7 +60,7 @@ export const BookDetail = () => {
       <Header />
       <div className='page-transition'>
         {isEditable && <Link to={`/edit/${id}`} className="edit-button">編集する</Link>}
-        <Link to="/" className="back-button">Homeへ戻る</Link>
+        <Link to="/home" className="back-button">Homeへ戻る</Link>
       </div>
       <div className="book-detail">
         <h1 className="book-detail-title">{book.title}</h1>

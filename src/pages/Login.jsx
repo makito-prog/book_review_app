@@ -33,7 +33,7 @@ export const Login = () => {
       document.cookie = `token=${token}; path=/;`;
   
       // リダイレクト
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       // エラーメッセージをセット
       setErrors({ general: 'メールアドレスまたはパスワードが間違っています' });

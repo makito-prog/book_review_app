@@ -27,7 +27,7 @@ export const NewReview = () => {
         throw new Error('Failed to submit review');
       }
       // ホーム画面に遷移
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       console.error('Error submitting review:', error);
     }

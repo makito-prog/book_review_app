@@ -55,7 +55,7 @@ export const Profile = () => {
       const updatedUserData = await response.json();
       setUserName(updatedUserData.name);
       alert('ユーザー情報が更新されました');
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       console.error('Error updating user info:', error);
       alert('ユーザー情報の更新に失敗しました');

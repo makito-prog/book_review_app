@@ -72,7 +72,7 @@ export const SignUp = () => {
       console.log('Uploaded icon successfully');
   
       setSubmitting(false);
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       console.error('Error occurred:', error);
     } finally {

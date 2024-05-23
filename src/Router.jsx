@@ -1,6 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { SignUp } from './pages/SignUp';
 import { Login } from './pages/Login';
 import { Home } from './pages/Home';
@@ -17,7 +16,8 @@ export const Router = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/notlogin" element={<NotLogin />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/new" element={<NewReview />} />
           <Route path="/detail/:id" element={<BookDetail />} />
