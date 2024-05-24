@@ -44,7 +44,9 @@ export const BookDetail = () => {
       }
     };
 
+    console.log(id, token);
     fetchBook();
+    
   }, [id, token]);
 
   if (loading) {

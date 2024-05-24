@@ -98,7 +98,7 @@ export const EditReview = () => {
           <label>URL:</label>
           <input type="text" name="url" value={editedBook.url} onChange={handleInputChange} />
           <label>Reviewer:</label>
-          <input type="text" name="reviewer" value={editedBook.reviewer} onChange={handleInputChange} />
+          <input type="text" name="reviewer" value={editedBook.reviewer} disabled />
           <label>Review:</label>
           <textarea name="review" value={editedBook.review} onChange={handleInputChange} />
           <div className='select-button'>

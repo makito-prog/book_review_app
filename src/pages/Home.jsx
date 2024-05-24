@@ -82,9 +82,14 @@ export const Home = () => {
     } catch (error) {
       console.error('Error sending log:', error);
     }
-  
-    // 編集画面に遷移
+
+    // 詳細画面に遷移
     navigate(`/detail/${selectBookId}`);
+  };
+
+  const handleEditClick = async (selectBookId) => {
+    await handleBookClick(selectBookId);
+    navigate(`/edit/${selectBookId}`);
   };
 
   return (
@@ -103,7 +108,7 @@ export const Home = () => {
                 <li className="home__book-review--item">{book.review}</li>
               </div>
               {user && user.name === book.reviewer && (
-                <Link to={`/edit/${book.id}`} className="edit-button">編集する</Link>
+                <button onClick={() => handleEditClick(book.id)} className="edit-button">編集する</button>
               )}
             </div>
           ))}
